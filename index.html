@@ -7,8 +7,10 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- LOADING -->
 <div id="loader">
   <div class="spinner"></div>
   <p>Loading...</p>
@@ -16,135 +18,229 @@
 
 <!-- NAVBAR -->
 <nav>
-  <h2>MyPortfolio</h2>
+  <h2><a href="index.html">MyPortfolio</a></h2>
 
+  <!-- DARK MODE -->
+  <button id="toggle-mode">🌙</button>
+
+  <!-- CHECKBOX (WAJIB DI SINI) -->
   <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Project</a></li>
-    <li><a href="#contact">Contact</a></li>
+  <!-- HAMBURGER -->
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- MENU -->
+  <ul class="menu">
+    <li><a href="#home" onclick="document.getElementById('menu-toggle').checked=false">Home</a></li>
+    <li><a href="#about" onclick="document.getElementById('menu-toggle').checked=false">About</a></li>
+    <li><a href="#skills" onclick="document.getElementById('menu-toggle').checked=false">Skills</a></li>
+    <li><a href="#projects" onclick="document.getElementById('menu-toggle').checked=false">Project</a></li>
+    <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked=false">Contact</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section id="home" class="hero fade-up">
-  <div class="hero-content">
+  <div class="hero-container">
 
-    <img src="profil.jpeg" alt="Foto Profil" class="profile">
+    <!-- KIRI (TEXT) -->
+    <div class="hero-text">
+      <h1>Hi, I'm <span>F. Anjulius Purba</span></h1>
 
-    <h1>Hi, I'm <span>F. Anjulius Purba</span></h1>
-    <p>Frontend Developer</p>
-    <a href="#about" class="btn">Scroll Down ↓</a>
+      <p>
+        Saya adalah mahasiswa Ilmu Komputer yang sedang belajar
+        dan terus mengembangkan diri di dunia teknologi,
+        khususnya dalam pengembangan website.
+        Saya tertarik membangun tampilan yang modern, 
+        interaktif, dan nyaman digunakan.
+      </p>
+
+      <p>
+        Saat ini saya masih dalam tahap pembelajaran,
+        namun saya terus meningkatkan kemampuan 
+        melalui berbagai proyek dan mengikuti perkembangan teknologi.
+      </p>
+
+      <p>
+        Bagi saya, belajar adalah proses yang tidak pernah berhenti.
+        Dengan konsistensi dan rasa ingin tahu,
+        saya yakin bisa menjadi developer profesional di masa depan.
+      </p>
+
+      <a href="#about" class="btn">Scroll Down ↓</a>
+    </div>
+
+    <!-- KANAN (FOTO) -->
+    <div class="hero-image">
+      <img src="profil.jpeg" alt="Foto Profil">
+    </div>
+
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section fade-up">
-  <h2>About Me</h2>
-  <p>
-    Saya mahasiswa yang sedang belajar web development dan tertarik membuat website modern dan interaktif.
-    Saya memiliki semangat untuk terus belajar dan mengembangkan kemampuan di bidang teknologi, khususnya dalam pembuatan tampilan website yang menarik dan user-friendly. 
-    Saya juga senang mencoba hal baru dan berusaha meningkatkan skill saya secara bertahap.
+
+  <div class="about-container">
+
+    <!-- FOTO -->
+    <div class="about-image">
+      <img src="profil2.jpg" class="about-img">
+    </div>
+
+    <!-- TEXT -->
+    <div class="about-text">
+      <h2>About Me</h2>
+
+      <p>
+        Saya adalah mahasiswa Ilmu Komputer yang sedang berproses dalam memahami dan mengembangkan kemampuan di dunia teknologi.
+        Saya memiliki minat dalam pengembangan website, khususnya dalam menciptakan tampilan yang modern dan interaktif.
+      </p>
+
+      <p>
+        Selain fokus di bidang teknologi, saya juga aktif dalam kegiatan lain seperti organisasi dan musik,
+        yang membantu saya dalam mengembangkan soft skill seperti kerja sama tim, komunikasi, dan kreativitas.
+      </p>
+
+      <p>
+        Saya percaya bahwa pengalaman, proses belajar, dan konsistensi adalah kunci untuk berkembang menjadi pribadi yang lebih baik.
+      </p>
+
+      <!-- BUTTON -->
+      <a href="history.html" class="btn">My Journey →</a>
+    </div>
+
+  </div>
+
 </section>
 
 <!-- SKILLS -->
- <section id="skills" class="section fade-up">
-    <h2>Skills</h2>
-    <div class="project-container">
-    <div class="card">HTML (Struktur Website)</div>
-    <div class="card">CSS (Desain Layout)</div>
-    <div class="card">JavaScript (Dasar)</div>
+<section id="skills" class="section fade-up">
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+      <p>HTML</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+      <p>CSS</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png">
+      <p>Database</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png">
+      <p>Framework</p>
+    </div>
+
   </div>
- </section>
+</section>
 
 <!-- PROJECT -->
 <section id="projects" class="section fade-up">
   <h2>Projects</h2>
 
   <div class="project-container">
-    <div class="card">
-      <h3>Portofolio Website</h3>
-      <p>Membuat Website Portofolio pribadi menggunakan HTML & CSS dengan tampilan modern dan responsive.</p>
+
+    <!-- PROJECT 1 -->
+    <div class="card project-card">
+      <img src="responsifwebsite.jpg" alt="Portofolio Website">
+      <h3>Website Portofolio</h3>
+      <p>Website pribadi saya menggunakan HTML, CSS, dan JavaScript dengan tampilan modern dan responsive.</p>
+      <a href="https://anjupurbadsh.github.io/portofolio/" target="_blank">Lihat Project</a>
     </div>
 
-    <div class="card">
-      <h3>Landing Page</h3>
-      <p>Membuat halaman landing sederhana dengan Desain modern.</p>
+    <!-- PROJECT 2 -->
+    <div class="card project-card">
+      <img src="webkripik.jpg" alt="Backend Web Kripik">
+      <h3>Website Backend Kripik</h3>
+      <p>Membangun sistem backend sederhana untuk pengelolaan produk dan data pada website penjualan kripik.</p>
+      <a href="" target="_blank">Lihat Project</a>
     </div>
+
+    <!-- PROJECT 3 -->
+    <div class="card project-card">
+      <img src="kocakin.png" alt="Kocak.in">
+      <h3>Website Jualan Kocak.in</h3>
+      <p>Website jualan dengan konsep unik dan kreatif, menampilkan produk dengan desain menarik dan interaktif.</p>
+      <a href="https://anjupurbadsh.github.io/kocak.in/" target="_blank">Lihat Project</a>
+    </div>
+
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section fade-up">
   <h2>Contact</h2>
-  <p>Silakan hubungi saya melalui:</p>
 
-  <div class="contact-box">
-    <p>Email: anjupurbadsh@gmail.com</p>
-    <p>Instagram: @anju_prbd</p>
+  <p class="contact-intro">
+    Jika Anda tertarik untuk bekerja sama, berdiskusi, atau sekadar berbagi pengalaman,
+    silakan hubungi saya melalui platform berikut atau kirimkan pesan langsung melalui form di bawah ini.
+  </p>
+
+  <!-- SOCIAL -->
+  <div class="socials">
+    <a href="mailto:anjupurbadsh@gmail.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+    </a>
+
+    <a href="https://instagram.com/anju_prbd" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+    </a>
+
+    <a href="https://github.com/USERNAME" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
+    </a>
   </div>
 
-  <!-- FORM (dari Bu Widya, sudah disesuaikan) -->
-<form id="contactform" class="form-modern">
+  <!-- FORM -->
+  <form id="contactform" class="form-modern">
 
-  <div class="input-group">
-    <input type="text" id="nama" required>
-    <label>Nama</label>
-  </div>
+    <div class="input-group">
+      <input type="text" id="nama" required>
+      <label>Nama Lengkap</label>
+    </div>
 
-  <div class="input-group">
-    <input type="text" id="email" required>
-    <label>Email</label>
-  </div>
+    <div class="input-group">
+      <input type="email" id="email" required>
+      <label>Email Aktif</label>
+    </div>
 
-  <button type="submit" class="btn-modern">Kirim Pesan</button>
+    <div class="input-group">
+      <textarea id="pesanInput" required></textarea>
+      <label>Pesan Anda</label>
+    </div>
 
-</form>
+    <button type="submit" class="btn-modern">Kirim Pesan</button>
 
-<p id="pesan"></p>
+  </form>
+
+  <p id="pesan"></p>
 </section>
-
-<script>
-  const form = document.getElementById("contactform");
-  const pesan = document.getElementById("pesan");
-
-  form.addEventListener("submit", function(event){
-    event.preventDefault();
-    const nama = document.getElementById("nama").value;
-    const email = document.getElementById("email").value;
-
-    if(nama==="" || email===""){
-      pesan.innerText = "Semua harus diisi yaa";
-      pesan.style.color = "red";
-      return;
-    } 
-
-    if(!email.includes("@")){
-      pesan.innerText = "Email tidak valid";
-      pesan.style.color = "red";
-      return;
-    }
-
-    pesan.innerText = "Form sudah terkirim eaa";
-    pesan.style.color = "green";
-  });
-</script>
 
 <!-- FOOTER -->
 <footer>
   <p>© 2026 F. Anjulius Purba. All rights reserved.</p>
 </footer>
 
-<script>
-  window.addEventListener("load", function(){
-    const loader = document.getElementById("loader");
-    loader.style.display = "none";
-  });
-</script>
+<!-- SCRIPT (WAJIB DI BAWAH) -->
+<script src="script.js"></script>
 
 </body>
 </html>
