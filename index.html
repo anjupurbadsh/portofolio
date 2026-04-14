@@ -9,6 +9,11 @@
 </head>
 <body>
 
+<div id="loader">
+  <div class="spinner"></div>
+  <p>Loading...</p>
+</div>
+
 <!-- NAVBAR -->
 <nav>
   <h2>MyPortofolio</h2>
@@ -22,7 +27,7 @@
 </nav>
 
 <!-- HERO -->
-<section id="home" class="hero">
+<section id="home" class="hero fade-up">
   <div class="hero-content">
 
     <img src="profil.jpeg" alt="Foto Profil" class="profile">
@@ -34,7 +39,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
+<section id="about" class="section fade-up">
   <h2>About Me</h2>
   <p>
     Saya mahasiswa yang sedang belajar web development dan tertarik membuat website modern dan interaktif.
@@ -43,7 +48,7 @@
 </section>
 
 <!-- SKILLS -->
- <section id="skills" class="section">
+ <section id="skills" class="section fade-up">
     <h2>Skills</h2>
     <div class="project-container">
     <div class="card">HTML (Struktur Website)</div>
@@ -53,7 +58,7 @@
  </section>
 
 <!-- PROJECT -->
-<section id="projects" class="section">
+<section id="projects" class="section fade-up">
   <h2>Projects</h2>
 
   <div class="project-container">
@@ -70,21 +75,72 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section fade-up">
   <h2>Contact</h2>
   <p>Silakan hubungi saya melalui:</p>
 
   <div class="contact-box">
     <p>Email: anjupurbadsh@gmail.com</p>
     <p>Instagram: @anju_prbd</p>
-    <!-- <p>GitHub: github.com/username</p> -->
   </div>
+
+  <!-- FORM (dari Bu Widya, sudah disesuaikan) -->
+<form id="contactform" class="form-modern">
+
+  <div class="input-group">
+    <input type="text" id="nama" required>
+    <label>Nama</label>
+  </div>
+
+  <div class="input-group">
+    <input type="text" id="email" required>
+    <label>Email</label>
+  </div>
+
+  <button type="submit" class="btn-modern">Kirim Pesan</button>
+
+</form>
+
+<p id="pesan"></p>
 </section>
+
+<script>
+  const form = document.getElementById("contactform");
+  const pesan = document.getElementById("pesan");
+
+  form.addEventListener("submit", function(event){
+    event.preventDefault();
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+
+    if(nama==="" || email===""){
+      pesan.innerText = "Semua harus diisi yaa";
+      pesan.style.color = "red";
+      return;
+    } 
+
+    if(!email.includes("@")){
+      pesan.innerText = "Email tidak valid";
+      pesan.style.color = "red";
+      return;
+    }
+
+    pesan.innerText = "Form sudah terkirim eaa";
+    pesan.style.color = "green";
+  });
+</script>
 
 <!-- FOOTER -->
 <footer>
   <p>© 2026 F. Anjulius Purba. All rights reserved.</p>
 </footer>
+
+<script>
+  window.addEventListener("load", function(){
+    const loader = document.getElementById("loader");
+    loader.style.display = "none";
+  });
+</script>
 
 </body>
 </html>
