@@ -16,6 +16,60 @@ section {
   scroll-margin-top: -20px;
 }
 
+/* ========================= */
+/* LOADING SCREEN */
+/* ========================= */
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #444;
+  border-top: 4px solid #00adb5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========================= */
+/* ANIMASI MASUK */
+/* ========================= */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* NAVBAR */
 nav {
   position: fixed;
@@ -166,6 +220,80 @@ nav ul li a:hover {
   color: white;
   font-weight: bold;
 }
+
+
+/* ========================= */
+/* FORM MODERN */
+/* ========================= */
+
+.form-modern {
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+/* INPUT GROUP */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+  color: white;
+}
+
+/* LABEL FLOATING */
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  color: #aaa;
+  font-size: 14px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  background: transparent;
+}
+
+/* EFEK SAAT DIKLIK */
+.input-group input:focus {
+  border-color: #00adb5;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #00adb5;
+  background: #222;
+  padding: 0 5px;
+}
+
+/* BUTTON MODERN */
+.btn-modern {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #00adb5;
+  color: white;
+  font-size: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-modern:hover {
+  background: #008c94;
+  transform: scale(1.03);
+}
+
 
 /* FOOTER */
 footer {
