@@ -108,6 +108,20 @@ nav ul li a:hover {
   color: #00adb5;
 }
 
+/* HAMBURGER ICON */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* sembunyikan checkbox */
+#menu-toggle {
+  display: none;
+}
+
+
 /* HERO */
 .hero {
   height: 100vh;
@@ -384,5 +398,33 @@ footer {
   .card {
     width: 90%;
   }
+
+.menu-icon {
+  display: block;
+}
+
+/* sembunyikan menu awal */
+nav ul {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  background: #111;
+  flex-direction: column;
+  align-items: center;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+nav ul li {
+  margin: 15px 0;
+}
+
+/* saat diklik */
+#menu-toggle:checked ~ ul {
+  max-height: 300px;
+}  
 
 }
