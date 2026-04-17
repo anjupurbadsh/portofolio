@@ -65,6 +65,10 @@ function showOnScroll() {
     } else {
       el.classList.remove('show');
     }
+    const parent = el.closest('.timeline-item');
+if(parent){
+  parent.classList.add('show');
+}
   });
 }
 

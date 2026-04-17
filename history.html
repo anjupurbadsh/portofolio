@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio F. Anjulius Purba</title>
+  <title>My Journey - F. Anjulius Purba</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+
 <!-- NAVBAR -->
 <nav>
-  <h2><a href="index.html">MyPortfolio</a></h2>
+  <h2><a href="index.html">MyPortofolio</a></h2>
 
   <!-- DARK MODE -->
   <button id="toggle-mode">🌙</button>
 
-  <!-- CHECKBOX (WAJIB DI SINI) -->
+  <!-- CHECKBOX -->
   <input type="checkbox" id="menu-toggle">
 
   <!-- HAMBURGER -->
@@ -29,47 +30,168 @@
 
   <!-- MENU -->
   <ul class="menu">
-    <li><a href="#home" onclick="document.getElementById('menu-toggle').checked=false">Home</a></li>
-    <li><a href="#about" onclick="document.getElementById('menu-toggle').checked=false">About</a></li>
-    <li><a href="#skills" onclick="document.getElementById('menu-toggle').checked=false">Skills</a></li>
-    <li><a href="#projects" onclick="document.getElementById('menu-toggle').checked=false">Project</a></li>
-    <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked=false">Contact</a></li>
+    <li><a href="index.html" onclick="document.getElementById('menu-toggle').checked=false">Home</a></li>
+    <li><a href="index.html#about" onclick="document.getElementById('menu-toggle').checked=false">About</a></li>
+    <li><a href="index.html#skills" onclick="document.getElementById('menu-toggle').checked=false">Skills</a></li>
+    <li><a href="index.html#projects" onclick="document.getElementById('menu-toggle').checked=false">Project</a></li>
+    <li><a href="index.html#contact" onclick="document.getElementById('menu-toggle').checked=false">Contact</a></li>
   </ul>
 </nav>
 
+<!-- HERO MINI -->
+<section class="section fade-up" style="padding-top:120px;">
+  <h1 style="font-size:32px;">My Journey 🚀</h1>
+  <p style="max-width:600px; margin:10px auto;">
+    Perjalanan saya dalam dunia Ilmu Komputer, organisasi, dan pengembangan diri.
+  </p>
+</section>
 
-<!-- HISTORY SECTION -->
+<!-- TIMELINE -->
 <section class="section fade-up">
 
-  <h2>My Journey</h2>
+  <div class="timeline">
 
-  <p style="max-width: 600px; margin: 20px auto; line-height: 1.6;">
-    Halaman ini akan berisi perjalanan saya dalam dunia Ilmu Komputer, 
-    pengalaman belajar, proyek yang pernah saya kerjakan, serta perkembangan skill saya 
-    di bidang teknologi, musik, dan organisasi.
+    <!-- ILKOM -->
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-text">
+          <h3>2024 - Sekarang</h3>
+          <p>Mendalami Ilmu Komputer dan mulai membangun berbagai project.</p>
+          <p><b>Komandan Tingkat (KOMTING 24IK4)</b></p>
+        </div>
+        <div class="timeline-image">
+          <img src="ilkom.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- GMKI -->
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-text">
+          <h3>2025 - 2026</h3>
+          <p><b>Ketua Komisariat GMKI PSS</b></p>
+          <p>Memimpin dan mengkoordinasi kegiatan organisasi serta meningkatkan partisipasi anggota.</p>
+        </div>
+        <div class="timeline-image">
+          <img src="gmki.jpg">
+        </div>
+      </div>
+    </div>
+
+    <!-- KMK -->
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-text">
+          <h3>2026 - 2027</h3>
+          <p><b>Ketua Keluarga Mahasiswa Katolik Nommensen</b></p>
+          <p>Mengelola program kerja dan membangun hubungan antar anggota organisasi.</p>
+        </div>
+        <div class="timeline-image">
+          <img src="kmk.jpeg">
+        </div>
+      </div>
+    </div>
+
+    <!-- GAMKI -->
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-text">
+          <h3></h3>
+          <p><b>Anggota GAMKI</b></p>
+          <p>Berperan aktif dalam berbagai kegiatan kepemudaan dan organisasi.</p>
+        </div>
+        <div class="timeline-image">
+          <img src="gamki.jpg">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILL LAIN -->
+<section class="section fade-up" id="skills">
+
+  <h2>Other Skills 🎵</h2>
+
+  <div class="project-container">
+
+    <div class="card">
+      <img src="gondang.jpg">
+      <h3>Gondang</h3>
+      <p>Memainkan alat musik tradisional dengan penuh penghayatan dan pelestarian budaya.</p>
+    </div>
+
+    <div class="card">
+      <img src="drum.jpg">
+      <h3>Drum</h3>
+      <p>Menguasai dasar rhythm dan koordinasi untuk menjaga tempo dalam sebuah musik.</p>
+    </div>
+
+    <div class="card">
+      <img src="gitar.jpg">
+      <h3>Gitar</h3>
+      <p>Mampu memainkan gitar sebagai alat musik modern untuk berbagai genre dan suasana.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PENUTUP -->
+<section class="section fade-up" style="background:#111; color:white;">
+  <h2>Coming Soon ✨</h2>
+  <p style="max-width:600px; margin:auto;">
+    Halaman ini akan terus diperbarui seiring perjalanan saya berkembang.
+    Nantikan cerita lengkapnya.
   </p>
-
-  <h1 style="font-size: 40px; margin-top: 40px; color: #00adb5;">
-    🚧 Coming Soon 🚧
-  </h1>
-
-  <p style="margin-top: 15px; font-size: 14px;">
-    Sedang dalam proses pengembangan. Nantikan cerita perjalanan saya selanjutnya!
-  </p>
-
-  <a href="index.html" class="btn" style="margin-top: 30px; display: inline-block;">
-    ← Kembali ke Beranda
-  </a>
-
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 F. Anjulius Purba. All rights reserved.</p>
+  <p>© 2026 F. Anjulius Purba</p>
 </footer>
 
-<!-- SCRIPT (WAJIB DI BAWAH) -->
-<script src="script.js"></script>
+<!-- SCRIPT -->
+<script>
+/* CLOSE MENU */
+function closeMenu(){
+  document.getElementById("menu-toggle").checked = false;
+}
+
+/* DARK MODE */
+const toggle = document.getElementById("toggle-mode");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+
+  if(document.body.classList.contains("light")){
+    toggle.innerText = "☀";
+  } else {
+    toggle.innerText = "🌙";
+  }
+});
+
+/* SCROLL ANIMATION */
+const elements = document.querySelectorAll('.fade-up');
+
+function showOnScroll() {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  elements.forEach(el => {
+    const boxTop = el.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', showOnScroll);
+window.addEventListener('load', showOnScroll);
+</script>
 
 </body>
 </html>
